@@ -28,21 +28,54 @@ The app allows users to explore blocks, view transactions, check balances, and c
 ## ⚙️ Setup & Installation
 
 ### 1. Clone the repository
-
-```bash
+bash 
 git clone https://github.com/FattmaJoaque/Block-explorer.git 
-cd block-explorer
+
+### 2. Install dependancies
+
+### 3. Start local blockchain
+
+### 4. Configure network 
+
+### 5. Start the app 
+
+
+---
+
+## PAGES 
+
+# Home 
+- An introduction to the application
+
+# Blocks
+- List recent blocks
+- Display recent blocks and timestamps
+- Links to transaction details
+
+# Transaction 
+- Shows recent transactions
+- Displays sender, receiver, and value
+
+# Create Transaction
+- Send ETH between accounts
+- Connected to local blockchain 
+
+# Transaction Details 
+- Full transaction information
+- Status (confirmed/failed)
+- Block number
+
+---
+
+## How it works
+The application connects to a local Ethereum blockchain using VIEM library. 
+- publicClient --> reads blockchain data
+- walletClient --> sends transactions
+  
+Data such as blocks and transactions are fetched dynamically and rendered in the UI. 
 
 
 
 
-How It Works
-
-The application connects to a local Ethereum blockchain using the viem library.
-
-publicClient → reads blockchain data
-walletClient → sends transactions
-
-Data such as blocks and transactions are fetched dynamically and rendered in the UI.
 
 
