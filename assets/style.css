@@ -22,6 +22,7 @@ main {
   max-width: 1024px;
   margin: auto;
 }
+
 .intro {
   background: #111827;
   border: 1px solid #1f2937;
@@ -38,6 +39,7 @@ main {
   color: #9ca3af;
   line-height: 1.6;
 }
+
 .section {
   background: #111827;
   border: 1px solid #1f2937;
@@ -53,7 +55,7 @@ main {
 }
 
 .section div {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #1f2937;
   padding: 4px 0;
@@ -140,6 +142,7 @@ nav ul li a.active {
   color: #ef4444;
   font-weight: bold;
 }
+
 #transaction {
   max-width: 800px;
   margin: auto;

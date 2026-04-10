@@ -1,41 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-     <link rel="stylesheet" href="/assets/style.css" />
-    <script type="module" src="/pages/create-transaction.ts" ></script>
-    <title>Create Transaction</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="menu">
-          <li class="logo"><a href="/index.html">Block Explorer</a></li>
 
-          <li class="menu-item"><a href="/index.html">Home</a></li>
-          <li class="menu-item"><a href="/pages/blocks.html">Block</a></li>
-          <li class="menu-item"><a href="/pages/transactions.html">Transaction History</a></li>
-          <li class="menu-item"><a class="active" href="/pages/create-transaction.html">CreateTransaction</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1 class="page-title">Create new Transaction</h1>
-      <form id="transaction-form">
-        <div class="form-control">
-          <label for="from">From:</label>
-          <input type="text" id="from" placeholder="0xd2b63acfC302bFD4B838dD3B681B983edd79e281" />
-        </div>
-        <div class="form-control">
-          <label for="to">To:</label>
-          <input type="text" id="to" placeholder="0x437E71E9db8FD66167aCbbAd1390B518f4c6496" />
-        </div>
-        <div class="form-control">
-          <label for="value">Value:</label>
-          <input type="text" id="value" placeholder="Value in Ether" />
-        </div>
-        <button type="submit" class="btn btn-rounded">Create</button>
-      </form>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script type="module" src="/pages/create-transaction.ts"></script>
+  <title>Create Transaction</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li class="logo"><a href="/index.html">Block Explorer</a></li>
+
+        <li class="menu-item"><a href="/index.html">Home</a></li>
+        <li class="menu-item"><a href="/pages/blocks.html">Block</a></li>
+        <li class="menu-item"><a href="/pages/transactions.html">Transaction History</a></li>
+        <li class="menu-item"><a class="active" href="/pages/create-transaction.html">CreateTransaction</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="page-title">Create new Transaction</h1>
+    <form id="transaction-form">
+      <div class="form-control">
+        <label for="from">From:</label>
+        <input type="text" id="from" placeholder="0xd2b63acfC302bFD4B838dD3B681B983edd79e281" />
+      </div>
+      <div class="form-control">
+        <label for="to">To:</label>
+        <input type="text" id="to" placeholder="0x437E71E9db8FD66167aCbbAd1390B518f4c6496" />
+      </div>
+      <div class="form-control">
+        <label for="value">Value:</label>
+        <input type="text" id="value" placeholder="Value in Ether" />
+      </div>
+      <button type="submit" class="btn btn-rounded">Create</button>
+    </form>
+  </main>
+</body>
+
 </html>

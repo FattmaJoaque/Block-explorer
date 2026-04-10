@@ -40,13 +40,13 @@ const listBlocks = async () => {
   for (let i = latestBlock; i > latestBlock - LIMIT && i >= 0n; i--) {
     const block = await client.getBlock({
       blockNumber: i,
-      includeTransactions: true, 
+      includeTransactions: true,
     });
 
     const div = createElement('div');
     div.classList.add('section');
 
-  
+
     div.appendChild(createRow('Block', block.number!.toString()));
     div.appendChild(createRow('Hash', block.hash ?? ''));
     div.appendChild(
@@ -56,7 +56,7 @@ const listBlocks = async () => {
       )
     );
 
-    
+
     if (block.transactions.length > 0) {
       const firstTx = block.transactions[0];
 

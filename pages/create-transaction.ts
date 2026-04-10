@@ -26,7 +26,7 @@ const createTransaction = async (e: SubmitEvent) => {
 
   try {
     const hash = await client.sendTransaction({
-      account: client.account, 
+      account: client.account,
       to: toInput.value as `0x${string}`,
       value: parseEther(valueInput.value),
       chain: client.chain,
