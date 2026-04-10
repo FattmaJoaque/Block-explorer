@@ -5,7 +5,6 @@ import { createElement } from '../helpers/dom';
 const list = document.querySelector('#list') as HTMLElement;
 let client: PublicClient;
 
-// ✅ Helper för snygga rader
 const createRow = (label: string, value: string | HTMLElement) => {
   const row = createElement('div');
 
@@ -48,7 +47,7 @@ const listTransactions = async () => {
       const div = createElement('div');
       div.classList.add('section');
 
-      // ✅ Snyggare info
+  
       div.appendChild(createRow('Hash', tx.hash.slice(0, 18) + '...'));
       div.appendChild(createRow('From', tx.from.slice(0, 14) + '...'));
       div.appendChild(
@@ -58,14 +57,14 @@ const listTransactions = async () => {
         )
       );
 
-      // ✅ ETH styling
+   
       const valueEl = createElement('span');
       valueEl.classList.add('eth');
       valueEl.textContent = `${parseFloat(formatEther(tx.value)).toFixed(4)} ETH`;
 
       div.appendChild(createRow('Value', valueEl));
 
-      // ✅ FIXED LINK (RELATIVE PATH)
+   
       const button = document.createElement('a');
       button.innerText = 'Show';
       button.classList.add('btn');
